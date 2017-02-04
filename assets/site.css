@@ -4,6 +4,9 @@
     position: fixed; 
     left: 0px; 
     top: 0px; 
+    right: 0px;
+    bottom: 0px;
+
     z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
 }
 
@@ -12,14 +15,3 @@
     height:100%;
 }
 
-@media (min-device-width:320px) {
-        img[data-src-960px] {
-            content: attr(data-src-960px, url);
-        }
-   }
-
-@media (min-device-width:960px) {
-       img[data-src-1260px] {
-            content: attr(data-src-1260px, url);
-        }
-   }
